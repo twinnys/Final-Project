@@ -64,6 +64,21 @@ public class Mini_Bus extends Mobil implements Proses_Sewa{
         return status;
     }
     
+    //menampilkan info tentang Mini_Bus
+    public void Info()
+    {
+        System.out.println(" ");
+        System.out.println(" Jenis Mobil : Minibus");
+        System.out.println("********************************");
+        System.out.println(" Nomor Polisi : " + this.no_pol);
+        System.out.println(" Merk : " + this.merk);
+        System.out.println(" Tahun Pembuatan : " + this.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + this.harga);
+        System.out.println(" Status :" + this.status );
+        System.out.println(" Kuota :" + this.kuota );
+        System.out.println("********************************");
+    }
+    
     @Override
     public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
         
