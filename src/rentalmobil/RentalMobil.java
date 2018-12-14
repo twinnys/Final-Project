@@ -64,8 +64,294 @@ public class RentalMobil {
         
         String nama, alamat, no_telp, tgl_sewa, kembali;
         int Pilihan1, lama_sewa, bayar;
+
+        //mengecek kondisi dengan perulangan do-while dan else-if
+        do{
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("*** SELAMAT DATANG DI Rental Mobil ***");
+        System.out.println("*****************************");
+        System.out.println(" ");
+        System.out.println("MENU OPTION");
+        System.out.println("1. Lihat Daftar Mobil");
+        System.out.println("2. Sewa Mobil");
+        System.out.println("3. Kembalikan Mobil(Coming Soon)");
+        System.out.print("Pilihan : ");
+        Pilihan1 = in.nextInt();
         
-        
+        if(Pilihan1 == 1){
+                System.out.println(" ");
+                System.out.println("*****************************");
+                System.out.println(" ");
+                System.out.println("MENU Jenis Mobil");
+                System.out.println("1. Minibus");
+                System.out.println("2. Truk");
+                System.out.println("3. Sedan");
+                System.out.println("4. Pickup");
+                System.out.println("5. Jeep");
+                System.out.print("Pilihan : ");
+                Pilihan1 = in.nextInt();
+
+                if(Pilihan1 == 1) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Minibus");
+                        for(int i = 0; i < mini.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + mini[i].getMerk() + " (kuota : " + mini[i].getKuota() + ")");
+                        }
+                }
+                else if(Pilihan1 == 2) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Truk");
+                        for(int i = 0; i < t.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + t[i].getMerk() + " (kuota : " + t[i].getKuota() + ")");
+                        }
+                }
+                else if(Pilihan1 == 3) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Sedan");
+                        for(int i = 0; i < s.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + s[i].getMerk() + " (kuota : " + s[i].getKuota() + ")");
+                        }
+                }
+                else if(Pilihan1 == 4) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Pickup");
+                        for(int i = 0; i < pi.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + pi[i].getMerk() + " (kuota : " + pi[i].getKuota() + ")");
+                        }
+                }
+                else if(Pilihan1 == 5) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Jeep");
+                        for(int i = 0; i < j.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + j[i].getMerk() + " (kuota : " + j[i].getKuota() + ")");
+                        }
+                }
+                else {
+                        System.out.println("SALAH INPUT!!");
+                }
+        }
+        else if(Pilihan1 == 2) {
+                System.out.println(" ");
+                System.out.println("*****************************");
+                System.out.println(" ");
+                System.out.println("MENU Jenis Mobil");
+                System.out.println("1. Minibus");
+                System.out.println("2. Truk");
+                System.out.println("3. Sedan");
+                System.out.println("4. Pickup");
+                System.out.println("5. Jeep");
+                System.out.print("Pilihan : ");
+                Pilihan1 = in.nextInt();
+
+                if(Pilihan1 == 1) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Minibus");
+                        for(int i = 0; i < mini.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + mini[i].getMerk());
+                        }
+                        System.out.print("Pilihan : ");
+                        Pilihan1 = in.nextInt();
+                        
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println("Masukkan Data Penyewa");
+                        in.nextLine();
+                        System.out.print("Nama Penyewa : ");
+                        nama = in.nextLine();
+                        System.out.print("Alamat Penyewa : ");
+                        alamat = in.nextLine();
+                        System.out.print("Nomor Telepon : ");
+                        no_telp = in.nextLine();
+                        System.out.print("Tanggal Sewa : ");
+                        tgl_sewa = in.nextLine();
+                        System.out.print("Lama Sewa(Satuan Hari) : ");
+                        lama_sewa = in.nextInt();
+                        System.out.println("*****************************");
+                        System.out.println("Harga : " + lama_sewa * mini[Pilihan1-1].getHarga());
+                        mobil = mini[Pilihan1-1];
+                        System.out.print("Bayar : ");
+                        bayar = in.nextInt();
+                        
+                        mobil.setKuota(mobil.getKuota()-1);
+                        Penyewa p_mini = new Penyewa(nama, alamat, no_telp, tgl_sewa, lama_sewa, bayar);
+                        mb4.Sewa_Minibus(p_mini,mobil);
+                }
+                else if(Pilihan1 == 2) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Truk");
+                        for(int i = 0; i < t.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + t[i].getMerk());
+                        }
+                        System.out.print("Pilihan : ");
+                        Pilihan1 = in.nextInt();
+                        
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println("Masukkan Data Penyewa");
+                        in.nextLine();
+                        System.out.print("Nama Penyewa : ");
+                        nama = in.nextLine();
+                        System.out.print("Alamat Penyewa : ");
+                        alamat = in.nextLine();
+                        System.out.print("Nomor Telepon : ");
+                        no_telp = in.nextLine();
+                        System.out.print("Tanggal Sewa : ");
+                        tgl_sewa = in.nextLine();
+                        System.out.print("Lama Sewa(Satuan Hari) : ");
+                        lama_sewa = in.nextInt();
+                        System.out.println("*****************************");
+                        System.out.println("Harga : " + lama_sewa * t[Pilihan1-1].getHarga());
+                        truk = t[Pilihan1-1];
+                        System.out.print("Bayar : ");
+                        bayar = in.nextInt();
+                        
+                        truk.setKuota(truk.getKuota()-1);
+                        Penyewa p_truk = new Penyewa(nama, alamat, no_telp, tgl_sewa, lama_sewa, bayar);
+                        tr4.Sewa_Truk(p_truk,truk);
+                }
+                else if(Pilihan1 == 3) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Sedan");
+                        for(int i = 0; i < s.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + s[i].getMerk());
+                        }
+                        System.out.print("Pilihan : ");
+                        Pilihan1 = in.nextInt();
+                        
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println("Masukkan Data Penyewa");
+                        in.nextLine();
+                        System.out.print("Nama Penyewa : ");
+                        nama = in.nextLine();
+                        System.out.print("Alamat Penyewa : ");
+                        alamat = in.nextLine();
+                        System.out.print("Nomor Telepon : ");
+                        no_telp = in.nextLine();
+                        System.out.print("Tanggal Sewa : ");
+                        tgl_sewa = in.nextLine();
+                        System.out.print("Lama Sewa(Satuan Hari) : ");
+                        lama_sewa = in.nextInt();
+                        System.out.println("*****************************");
+                        System.out.println("Harga : " + lama_sewa * s[Pilihan1-1].getHarga());
+                        sedan = s[Pilihan1-1];
+                        System.out.print("Bayar : ");
+                        bayar = in.nextInt();
+                        
+                        sedan.setKuota(sedan.getKuota()-1);
+                        Penyewa p_sedan = new Penyewa(nama, alamat, no_telp, tgl_sewa, lama_sewa, bayar);
+                        sd4.Sewa_Sedan(p_sedan,sedan);
+                }
+                else if(Pilihan1 == 4) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Pickup");
+                        for(int i = 0; i < pi.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + pi[i].getMerk());
+                        }
+                        System.out.print("Pilihan : ");
+                        Pilihan1 = in.nextInt();
+                        
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println("Masukkan Data Penyewa");
+                        in.nextLine();
+                        System.out.print("Nama Penyewa : ");
+                        nama = in.nextLine();
+                        System.out.print("Alamat Penyewa : ");
+                        alamat = in.nextLine();
+                        System.out.print("Nomor Telepon : ");
+                        no_telp = in.nextLine();
+                        System.out.print("Tanggal Sewa : ");
+                        tgl_sewa = in.nextLine();
+                        System.out.print("Lama Sewa(Satuan Hari) : ");
+                        lama_sewa = in.nextInt();
+                        System.out.println("*****************************");
+                        System.out.println("Harga : " + lama_sewa * pi[Pilihan1-1].getHarga());
+                        pickup = pi[Pilihan1-1];
+                        System.out.print("Bayar : ");
+                        bayar = in.nextInt();
+                        
+                        pickup.setKuota(pickup.getKuota()-1);
+                        Penyewa p_pickup = new Penyewa(nama, alamat, no_telp, tgl_sewa, lama_sewa, bayar);
+                        pk4.Sewa_Pickup(p_pickup,pickup);
+                }
+                else if(Pilihan1 == 5) {
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println(" ");
+                        System.out.println("Daftar Mobil Jeep");
+                        for(int i = 0; i < j.length; i++)
+                        {
+                            System.out.println(i+1 + ". " + j[i].getMerk());
+                        }
+                        System.out.print("Pilihan : ");
+                        Pilihan1 = in.nextInt();
+                        
+                        System.out.println(" ");
+                        System.out.println("*****************************");
+                        System.out.println("Masukkan Data Penyewa");
+                        in.nextLine();
+                        System.out.print("Nama Penyewa : ");
+                        nama = in.nextLine();
+                        System.out.print("Alamat Penyewa : ");
+                        alamat = in.nextLine();
+                        System.out.print("Nomor Telepon : ");
+                        no_telp = in.nextLine();
+                        System.out.print("Tanggal Sewa : ");
+                        tgl_sewa = in.nextLine();
+                        System.out.print("Lama Sewa(Satuan Hari) : ");
+                        lama_sewa = in.nextInt();
+                        System.out.println("*****************************");
+                        System.out.println("Harga : " + lama_sewa * j[Pilihan1-1].getHarga());
+                        jeep = j[Pilihan1-1];
+                        System.out.print("Bayar : ");
+                        bayar = in.nextInt();
+                        
+                        jeep.setKuota(jeep.getKuota()-1);
+                        Penyewa p_jeep = new Penyewa(nama, alamat, no_telp, tgl_sewa, lama_sewa, bayar);
+                        jp4.Sewa_Jeep(p_jeep,jeep);
+                }
+                else {
+                        System.out.println("SALAH INPUT!!");
+                }
+        }
+        else if(Pilihan1 == 3) {
+            
+        }
+        else {
+                System.out.println("SALAH INPUT!!");
+        }
+        in.nextLine();
+        System.out.print("Kembali ke Menu Utama [y/n] ? ");
+        kembali = in.nextLine();
+        }while("y".equals(kembali));
     }
-    
 }
