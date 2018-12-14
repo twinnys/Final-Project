@@ -29,7 +29,10 @@ public class Mini_Bus extends Mobil implements Proses_Sewa{
     public Mini_Bus() {
     }
     
-    
+    //setter kuota
+    public void setKuota(int kuota) {
+        this.kuota = kuota;
+    }
     
     @Override
     public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
