@@ -9,7 +9,7 @@ package rentalmobil;
  *
  * @author ASUS
  */
-class Penyewa {
+public class Penyewa {
     public String nama_penyewa;
     public String alamat;
     public String no_telp;
