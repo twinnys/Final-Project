@@ -15,6 +15,17 @@ public class Pickup extends Mobil implements Proses_Sewa{
     public int kuota;
     public Pickup pick[];
     
+    //konstruktor berparameter
+    public Pickup(String no_pol, String merk, int tahun_pembuatan, int harga, int kuota)
+    {
+        this.no_pol = no_pol;
+        this.merk = merk;
+        this.tahun_pembuatan = tahun_pembuatan;
+        this.status = status;
+        this.harga = harga;
+        this.kuota = kuota;
+    }
+    
     @Override
     public void Sewa_Pickup(Penyewa p, Pickup pk) {
         
