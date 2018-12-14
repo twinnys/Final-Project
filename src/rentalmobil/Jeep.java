@@ -77,9 +77,29 @@ public class Jeep extends Mobil implements Proses_Sewa{
         System.out.println("********************************");
     }
 
+    //untuk informasi sewa jeep
     @Override
     public void Sewa_Jeep(Penyewa p, Jeep jp) {
+        int kembali,tot;
+        tot = jp.harga * p.lama_sewa;
+        kembali = p.bayar - tot;
         
+        System.out.println(" ");
+        System.out.println(" Nama Penyewa : " + p.nama_penyewa);
+        System.out.println(" Alamat Penyewa : " + p.alamat);
+        System.out.println(" Nomor Telepon : " + p.no_telp);
+        System.out.println(" Tanggal Sewa : " + p.tgl_sewa);
+        System.out.println(" Lama Sewa : " + p.lama_sewa);
+        System.out.println("********************************");
+        System.out.println(" Jenis Mobil : Jeep");
+        System.out.println(" Nomor Polisi : " + jp.no_pol);
+        System.out.println(" Merk : " + jp.merk);
+        System.out.println(" Tahun Pembuatan : " + jp.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + jp.harga);
+        System.out.println("********************************");
+        System.out.println(" Bayar            :Rp" + p.bayar);
+        System.out.println(" Kembali          :Rp" + kembali);
+        System.out.println("********************************");
     }
     
     @Override
