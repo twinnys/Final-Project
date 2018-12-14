@@ -79,9 +79,29 @@ public class Pickup extends Mobil implements Proses_Sewa{
         System.out.println("********************************");
     }
     
+    //untuk informasi sewa_pickup
     @Override
     public void Sewa_Pickup(Penyewa p, Pickup pk) {
+        int kembali,tot;
+        tot = pk.harga * p.lama_sewa;
+        kembali = p.bayar - tot;
         
+        System.out.println(" ");
+        System.out.println(" Nama Penyewa : " + p.nama_penyewa);
+        System.out.println(" Alamat Penyewa : " + p.alamat);
+        System.out.println(" Nomor Telepon : " + p.no_telp);
+        System.out.println(" Tanggal Sewa : " + p.tgl_sewa);
+        System.out.println(" Lama Sewa : " + p.lama_sewa);
+        System.out.println("********************************");
+        System.out.println(" Jenis Mobil : Pickup");
+        System.out.println(" Nomor Polisi : " + pk.no_pol);
+        System.out.println(" Merk : " + pk.merk);
+        System.out.println(" Tahun Pembuatan : " + pk.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + pk.harga);
+        System.out.println("********************************");
+        System.out.println(" Bayar            :Rp" + p.bayar);
+        System.out.println(" Kembali          :Rp" + kembali);
+        System.out.println("********************************");
     }
     
     @Override
