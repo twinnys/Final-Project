@@ -10,6 +10,7 @@ package rentalmobil;
  * @author ASUS
  */
 public class Penyewa {
+    //atribut yg dibutuhkan untuk class Penyewa
     public String nama_penyewa;
     public String alamat;
     public String no_telp;
@@ -17,6 +18,7 @@ public class Penyewa {
     public int lama_sewa;
     public int bayar;
 
+    //konstruktor berparameter
     public Penyewa(String nama_penyewa, String alamat, String no_telp, String tgl_sewa, int lama_sewa, int bayar) {
         this.nama_penyewa = nama_penyewa;
         this.alamat = alamat;
