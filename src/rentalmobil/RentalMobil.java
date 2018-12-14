@@ -25,6 +25,7 @@ public class RentalMobil {
         Mini_Bus mb3 = new Mini_Bus("N 7877 DD","Alphard",2016,3500000,3);
         Mini_Bus mb4 = new Mini_Bus("N 4567 EE","Gran Max",2014,3000000,2);
         
+        
         //menambahkan data pada Truk
         Truk truk = null;
         Truk tr1 = new Truk("N 5555 RE","Hino",2014,2000000,4);
