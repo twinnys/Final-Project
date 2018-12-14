@@ -28,6 +28,7 @@ public class Sedan extends Mobil implements Proses_Sewa{
         this.kuota = kuota;
     }
 
+    //menambahkan getter dan setter pada class Sedan
     public void setKuota(int kuota) {
         this.kuota = kuota;
     }
@@ -56,6 +57,21 @@ public class Sedan extends Mobil implements Proses_Sewa{
         return status;
     }
 
+    //menambahkan method Info untuk mencetak
+    public void Info()
+    {
+        System.out.println(" ");
+        System.out.println(" Jenis Mobil : Sedan");
+        System.out.println("********************************");
+        System.out.println(" Nomor Polisi : " + this.no_pol);
+        System.out.println(" Merk : " + this.merk);
+        System.out.println(" Tahun Pembuatan : " + this.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + this.harga);
+        System.out.println(" Status :" + this.status );
+        System.out.println("********************************");
+    }    
+    
+    
     @Override
     public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
     }
@@ -72,6 +88,7 @@ public class Sedan extends Mobil implements Proses_Sewa{
     public void Sewa_Jeep(Penyewa p, Jeep jp) {
     }
     
+    //menambahkan override pada Sewa_Sedan
     @Override
     public void Sewa_Sedan(Penyewa p, Sedan sd) {
         
@@ -97,4 +114,6 @@ public class Sedan extends Mobil implements Proses_Sewa{
         System.out.println("********************************");
         
     }
+    
+    
 }
