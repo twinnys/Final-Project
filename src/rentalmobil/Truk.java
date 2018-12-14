@@ -28,6 +28,32 @@ class Truk extends Mobil implements Proses_Sewa{
         this.kuota = kuota;
     }
     
-    
-    
+    //menambahkan getter dan setter class Truk
+    public void setKuota(int kuota) {
+        this.kuota = kuota;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public int getKuota() {
+        return kuota;
+    }
+
+    public String getNo_pol() {
+        return no_pol;
+    }
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public int getTahun_pembuatan() {
+        return tahun_pembuatan;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 }
