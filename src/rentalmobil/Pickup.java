@@ -30,6 +30,11 @@ public class Pickup extends Mobil implements Proses_Sewa{
     public Pickup() {
     }
     
+    //setter kuota
+    public void setKuota(int kuota) {
+        this.kuota = kuota;
+    }
+    
     
     @Override
     public void Sewa_Pickup(Penyewa p, Pickup pk) {
