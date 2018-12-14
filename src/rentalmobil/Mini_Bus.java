@@ -24,6 +24,10 @@ public class Mini_Bus extends Mobil implements Proses_Sewa{
         this.harga = harga;
         this.kuota = kuota;
     }
+
+    //konstruktor default
+    public Mini_Bus() {
+    }
     
     
     
