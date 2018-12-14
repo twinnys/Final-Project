@@ -25,6 +25,11 @@ public class Pickup extends Mobil implements Proses_Sewa{
         this.harga = harga;
         this.kuota = kuota;
     }
+
+    //konstruktor default
+    public Pickup() {
+    }
+    
     
     @Override
     public void Sewa_Pickup(Penyewa p, Pickup pk) {
