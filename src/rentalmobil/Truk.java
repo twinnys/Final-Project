@@ -70,4 +70,51 @@ class Truk extends Mobil implements Proses_Sewa{
         System.out.println(" Status :" + this.status );
         System.out.println("********************************");
     }
+    
+    @Override
+    public void Sewa_Truk(Penyewa p, Truk tr) {
+        
+        int kembali,tot;
+        tot = tr.harga * p.lama_sewa;
+        kembali = p.bayar - tot;
+        
+        System.out.println(" ");
+        System.out.println(" Nama Penyewa : " + p.nama_penyewa);
+        System.out.println(" Alamat Penyewa : " + p.alamat);
+        System.out.println(" Nomor Telepon : " + p.no_telp);
+        System.out.println(" Tanggal Sewa : " + p.tgl_sewa);
+        System.out.println(" Lama Sewa : " + p.lama_sewa);
+        System.out.println("********************************");
+        System.out.println(" Jenis Mobil : Truk");
+        System.out.println(" Nomor Polisi : " + tr.no_pol);
+        System.out.println(" Merk : " + tr.merk);
+        System.out.println(" Tahun Pembuatan : " + tr.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + tr.harga);
+        System.out.println("********************************");
+        System.out.println(" Bayar            :Rp" + p.bayar);
+        System.out.println(" Kembali          :Rp" + kembali);
+        System.out.println("********************************");
+        
+    }
+
+    //menambahkan override pada class truk
+    @Override
+    public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
+        
+    }
+
+    @Override
+    public void Sewa_Sedan(Penyewa p, Sedan sd) {
+        
+    }
+
+    @Override
+    public void Sewa_Pickup(Penyewa p, Pickup pk) {
+        
+    }
+
+    @Override
+    public void Sewa_Jeep(Penyewa p, Jeep jp) {
+        
+    }
 }
