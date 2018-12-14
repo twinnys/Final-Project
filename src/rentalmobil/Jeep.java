@@ -24,6 +24,10 @@ public class Jeep extends Mobil implements Proses_Sewa{
         this.harga = harga;
         this.kuota = kuota;
     }
+
+    //konstruktor default
+    public Jeep() {
+    }
     
     
 
