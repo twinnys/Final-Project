@@ -56,4 +56,18 @@ class Truk extends Mobil implements Proses_Sewa{
     public String getStatus() {
         return status;
     }
+    
+    //method Info guna mencetak
+    public void Info()
+    {
+        System.out.println(" ");
+        System.out.println(" Jenis Mobil : Truk");
+        System.out.println("********************************");
+        System.out.println(" Nomor Polisi : " + this.no_pol);
+        System.out.println(" Merk : " + this.merk);
+        System.out.println(" Tahun Pembuatan : " + this.tahun_pembuatan);
+        System.out.println(" Harga Sewa : " + this.harga);
+        System.out.println(" Status :" + this.status );
+        System.out.println("********************************");
+    }
 }
