@@ -10,6 +10,7 @@ package rentalmobil;
  * @author ASUS
  */
 public abstract class Mobil {
+    //atribut untuk claas Mobil
     public String no_pol;
     public String merk;
     public int tahun_pembuatan;
