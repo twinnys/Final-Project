@@ -9,6 +9,14 @@ package rentalmobil;
  *
  * @author ASUS
  */
-class Truk {
+class Truk extends Mobil implements Proses_Sewa{
+
+    public int harga;//atrivut harga untuk menyimpan harga
+    public int kuota;//atribut kuota untuk menyimpan kuota
+    public Truk mini[];//atribut Truk mini untuk menyimpan Truk
+
+
+    
+    
     
 }
