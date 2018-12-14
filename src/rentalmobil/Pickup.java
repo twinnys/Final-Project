@@ -9,6 +9,35 @@ package rentalmobil;
  *
  * @author ASUS
  */
-public class Pickup {
+public class Pickup extends Mobil implements Proses_Sewa{
+    //atribut untuk class Pickup
+    public int harga;
+    public int kuota;
+    public Pickup pick[];
+    
+    @Override
+    public void Sewa_Pickup(Penyewa p, Pickup pk) {
+        
+    }
+    
+    @Override
+    public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
+        
+    }
+
+    @Override
+    public void Sewa_Truk(Penyewa p, Truk tr) {
+        
+    }
+
+    @Override
+    public void Sewa_Sedan(Penyewa p, Sedan sd) {
+        
+    }
+
+    @Override
+    public void Sewa_Jeep(Penyewa p, Jeep jp) {
+        
+    }
     
 }
