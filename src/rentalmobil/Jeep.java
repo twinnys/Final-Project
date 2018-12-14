@@ -28,6 +28,11 @@ public class Jeep extends Mobil implements Proses_Sewa{
     //konstruktor default
     public Jeep() {
     }
+
+    //setter kuota
+    public void setKuota(int kuota) {
+        this.kuota = kuota;
+    }
     
     
 
