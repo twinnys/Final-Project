@@ -34,6 +34,36 @@ public class Mini_Bus extends Mobil implements Proses_Sewa{
         this.kuota = kuota;
     }
     
+    //getter harga
+    public int getHarga() {
+        return harga;
+    }
+
+    //getter kuota
+    public int getKuota() {
+        return kuota;
+    }
+
+    //getter no_pol
+    public String getNo_pol() {
+        return no_pol;
+    }
+
+    //getter merk
+    public String getMerk() {
+        return merk;
+    }
+
+    //getter tahun_pembuatan
+    public int getTahun_pembuatan() {
+        return tahun_pembuatan;
+    }
+
+    //getter status
+    public String getStatus() {
+        return status;
+    }
+    
     @Override
     public void Sewa_Minibus(Penyewa p, Mini_Bus mb) {
         
