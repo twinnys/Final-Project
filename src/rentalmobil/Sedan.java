@@ -9,6 +9,11 @@ package rentalmobil;
  *
  * @author ASUS
  */
-public class Sedan {
+public class Sedan extends implements Proses_Sewa{
+    
+    public int harga;//atribut harga untuk menyimpan nilai harga
+    public int kuota;//atribut kuota untuk menyimpan nilai kuota
+    public Sedan sed[];//atribut untuk menyimpan jenis-jenis mobil sedan
+    
     
 }
