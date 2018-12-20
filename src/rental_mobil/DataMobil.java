@@ -286,7 +286,7 @@ public class DataMobil extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    
+    //mengaktifkan tombol button reset untuk mereset data yg ditambahkan 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         txtNoPolisi.setText(null);
         txtMerkMobil.setText(null);
