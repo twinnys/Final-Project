@@ -129,12 +129,14 @@ public class Menu extends javax.swing.JFrame {
             Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
-
+    
+    //mengaktifkan button pengembalian untuk bisa masuk ke frame Data Pengembalian 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         this.setVisible(false);
         new DataPengembalian().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
-
+    
+    //mengaktifkan button logout, logout bagi admin
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         this.setVisible(false);
         new Login().setVisible(true);
