@@ -264,7 +264,8 @@ public class DataMobil extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, ex);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
-
+    
+    //mengaktifkan button simpan dengan memasukkan data yg telah diisi yaitu no_polisi, merk_mobil, tahun_pembuatan, harga_sewa, kuota_mobil
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try{
             String sql = "INSERT INTO mobil (no_polisi, merk_mobil, tahun_pembuatan, harga_sewa, kuota_mobil, jenis)"
