@@ -315,7 +315,7 @@ public class DataMobil extends javax.swing.JFrame {
         this.setVisible(false);
         new Menu().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    //mengaktifkan button edit, untuk mengedit data mobil yg ada
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         try{
             String sql = "UPDATE mobil SET merk_mobil=?, tahun_pembuatan=?, harga_sewa=?, kuota_mobil=?, jenis=? WHERE no_polisi=?";
