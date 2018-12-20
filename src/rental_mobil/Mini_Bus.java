@@ -27,7 +27,7 @@ public class Mini_Bus extends Mobil implements Proses_Sewa {
     PreparedStatement pst = null;
     ResultSet rs = null;
 
-    Mini_Bus() {
+    public Mini_Bus() {
         
     }
     
