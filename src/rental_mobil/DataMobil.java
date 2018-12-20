@@ -310,7 +310,7 @@ public class DataMobil extends javax.swing.JFrame {
         txtKuotaMobil.setText(model.getValueAt(i,5).toString());
         cbJenis.setSelectedItem(model.getValueAt(i, 3).toString());
     }//GEN-LAST:event_jTable1MouseClicked
-
+    //mengaktifkan button kembali untuk kembali ke menu 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.setVisible(false);
         new Menu().setVisible(true);
