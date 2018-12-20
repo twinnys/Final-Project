@@ -102,7 +102,7 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    //mengaktifkan tombol login dengan memisalkan username dan pass "admin"
+    //mengaktifkan tombol login dengan username dan password dimisalkan "admin"
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String username,password;
         username = txtUsername.getText();
