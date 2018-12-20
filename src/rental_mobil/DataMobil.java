@@ -258,7 +258,7 @@ public class DataMobil extends javax.swing.JFrame {
             pst = con.prepareStatement(sql);
             pst.setString(1,txtNoPolisi.getText());
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Data Berhasil di Hapus");
+            JOptionPane.showMessageDialog(null, "Data Berhasil Di Hapus");
         }
         catch(SQLException | HeadlessException ex){
             JOptionPane.showMessageDialog(null, ex);
