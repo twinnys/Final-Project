@@ -299,7 +299,7 @@ public class DataMobil extends javax.swing.JFrame {
     private void txtNoPolisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNoPolisiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNoPolisiActionPerformed
-
+    //mengaktifkan tabel untuk memasukkan data mobil yg sudah ditambahkan
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         int i = jTable1.getSelectedRow();
         TableModel model = jTable1.getModel();
