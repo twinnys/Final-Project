@@ -17,7 +17,7 @@ import javax.swing.table.TableModel;
  * @author ASUS
  */
 public class DataMobil extends javax.swing.JFrame {
-
+    //mengaktifkan koneksi ke database rentalmobil
     Connection con = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
