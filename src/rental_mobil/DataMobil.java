@@ -249,7 +249,8 @@ public class DataMobil extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //mengaktifkan button hapus untuk menghapus data mobil yang telah ditambahkan
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         try{
             String sql = "DELETE FROM mobil WHERE no_polisi = ?";
