@@ -114,12 +114,13 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //mengaktifkan button penyewaan agar bisa masuk ke frame Data Penyewaan
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.setVisible(false);
-        new DataPenyewaan().setVisible(true);
+//        new DataPenyewaan().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    //mengaktifkan button data mobil untuk bisa masuk ke frame data mobil dnegan melihat-lihat data mobil yg ada
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
         try {
